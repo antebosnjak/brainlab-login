@@ -1,0 +1,105 @@
+
+/* Postavljanje margina i padinga svih elemeanta na nulu univerzalnim selektorom zvjezica */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+  }
+  
+
+/* Postavljanje fonta, prikaza, smještaja i boje za kompletni body */
+body {
+    font-family: 'Verdana', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*  Postavljanje visine body-a na 100% visine viewport-a*/
+    height: 100vh;
+    /* Postavljanje zadane boje body-a tj. pozadine */
+    background: #fcd530;
+  }
+  
+  
+  .card {
+    width: 1000px;
+    height: 500px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+  }
+  
+  /* Postavljanje veličine, boje, položaja Headera i teksta u njemu */
+  header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ce1920;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  /*  klasa koja definira položaj slike - u ovom slučaju reverzno*/
+  .main {
+    display: flex;
+    flex-direction: row;
+
+    height: 430px;
+  }
+  
+  img {
+    width: 50%;
+    border-bottom-left-radius: 15px;
+  }
+  
+  /* klasa koja definira boju, veličinu i smještaj textboxeva */
+  .login {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-bottom-right-radius: 15px;
+  }
+  
+  /* klasa koja donju marginu prvog elementa
+  tj. Username-a da poveća udaljenost od slijedećeg   */
+  .login .input {
+    margin-bottom: 20px;
+  }
+  
+  /* Klasa za label text unutar login klase (elementa) */
+  .login label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  /* Klasa za input text unutar login klase (elementa) */
+  .login input {
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 2px solid #fcd530;
+    outline: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
